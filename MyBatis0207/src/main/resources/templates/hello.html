@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body><block th:each="aa, ii:${list}">
+<li>[[${aa}]]---[[${ii.index}]]===[[${ii.count}]]</li>
+</th:block>
+<hr>
+<h1>[[${msg}]]</h1>
+<h1 th:text="${msg}"></h1>
+<hr>
+<h4>[[${list}]]</h4>
+</body>
+</html>
